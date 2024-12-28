@@ -1,6 +1,7 @@
 # dummy-systemd-service-
 Firstly, install dummy.sh into your system.
 ```
+chmod +x dummy.sh
 sudo cp dummy.sh /usr/bin/dummy.sh
 ```
 Secondly, install dummy.service into your system.
