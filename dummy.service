@@ -1,0 +1,14 @@
+[Unit]
+Description=Dummy Service that does nothing
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/bash /usr/bin/dummy.sh
+Type=simple
+StandardOutput=journal
+StandardError=journal
+User=root
+Group=root
+SyslogIdentifier=dummy-service
+[Install]
+WantedBy=multi-user.target
